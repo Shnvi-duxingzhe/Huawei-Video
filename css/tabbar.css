@@ -1,0 +1,121 @@
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a, label, button, input, select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: none;
+    float: left;
+    background-size: 20px;
+    background-oepeat: no-oepeat;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7px 5px 7px 5px;
+    background: #ffffff;
+    font-family:"Times New Roman",Georgia,Serif;
+}
+
+.footer:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #e4e4e4;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.tabbar-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #979797;
+}
+
+.tabbar-item-text {
+    display: inline-block;
+    font-size: 0.65rem;
+    color: #dbdbdb;
+    padding-top: 2px;
+}
+
+.tabbar-item-active .tabbar-item-text {
+    color: #e16531;
+}
+
+.icon-index {
+    background-image: url('../img/icon/index.png');
+}
+.icon-index-o {
+    background-image: url('../img/icon/index-o.png');
+}
+.icon-yule {
+    background-image: url('../img/icon/yule.png');
+}
+.icon-yule-o {
+    background-image: url('../img/icon/yule-o.png');
+}
+.icon-guanzhu {
+    background-image: url('../img/icon/guanzhu.png')
+}
+.icon-guanzhu-o {
+    background-image: url('../img/icon/guanzhu-o.png')
+}
+.icon-saishi {
+    background-image: url('../img/icon/saishi.png')
+}
+.icon-saishi-o {
+    background-image: url('../img/icon/saishi-o.png')
+}
+.icon-wode {
+    background-image: url('../img/icon/wode.png');
+}
+.icon-wode-o {
+    background-image: url('../img/icon/wode-o.png');
+}
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 49;
+}

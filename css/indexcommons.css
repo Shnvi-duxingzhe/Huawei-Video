@@ -1,0 +1,299 @@
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Helvetica Neue, STHeiti, Microsoft Yahei, Tahoma, Simsun, sans-serif
+}
+
+:focus {
+    outline: 1
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: inherit
+}
+
+ins {
+    text-decoration: none
+}
+
+ins,
+mark {
+    background-color: #ff9;
+    color: #000
+}
+
+mark {
+    font-style: italic;
+    font-weight: 700
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+.vjs-error-display {
+    display: none
+}
+
+#js-app-container {
+    min-height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/fonts/iconfont_d59d672.eot);
+    src: url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/fonts/iconfont_d59d672.eot) format("embedded-opentype"), url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/fonts/iconfont_5a02677.woff) format("woff"), url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/fonts/iconfont_e711c84.ttf) format("truetype"), url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/fonts/iconfont_a1d07e4.svg) format("svg")
+}
+
+.iconfont {
+    font-family: iconfont !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none
+}
+
+body {
+    background: url(https://shark2.douyucdn.cn/front-publish/m-douyu-v3-master/assets/images/logo_ab89bd9.png) no-repeat;
+    -webkit-background-size: 30% auto;
+    -moz-background-size: 30% auto;
+    background-size: 30% auto;
+    background-position: 50%;
+    max-width: 1125px
+}
+
+#js-app-container,
+#root {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0
+}
+
+#js-no-landscape {
+    display: none
+}
+
+.dy-adapter-complete body {
+    background: none
+}
+
+.dy-adapter-complete #js-app-container,
+.dy-adapter-complete #root {
+    -webkit-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+    opacity: 1
+}
+
+.fr {
+    float: right
+}
+
+.fl {
+    float: left
+}
+
+.mgr20 {
+    margin-right: 10px
+}
+
+.mgr10 {
+    margin-right: 5px
+}
+
+.mgl20 {
+    margin-left: 10px
+}
+
+.mgl10 {
+    margin-left: 5px
+}
+
+.clr0 {
+    color: #f70
+}
+
+.clr333 {
+    color: #333
+}
+
+.clr666 {
+    color: #666
+}
+
+.clr999 {
+    color: #999
+}
+
