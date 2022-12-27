@@ -1,0 +1,141 @@
+
+.sort-page .sort-search {
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    top: 0;
+}
+
+.sort-page .sort-search input {
+    background: #f3f4f6;
+    border: 1px solid #ebebeb;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    background: url("../img/search.svg") no-repeat 10px center;
+    background-size: 16px 16px;
+    text-indent: 35px;
+}
+
+.sort-page .content {
+    display: none;
+    text-align: center;
+}
+
+.sort-page .content-item {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.sort-page .content-list{
+   width: 33.333333%;
+    margin: 5px 0;
+}
+.sort-page  .content_tit{
+    font-weight: bold;
+}
+.sort-page .content-item img{
+    width: 60px;
+    height: 60px;
+}
+.sort-page .wrapper-left ul li {
+    margin: 20px auto;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.sort-page .wrapper-left .tab_active {
+    color: rgb(255, 219, 71);
+    font-weight: bold;
+    border-left: 3px solid rgb(255, 219, 71);
+}
+
+.sort-page .wrapper-right {
+    padding: 20px 20px 60px 20px;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+.sort-page .wrapper-left {
+    position: fixed;
+    height: 100%;
+    top: 51px;
+    width: 20%;
+}
+.sort-search-page{
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    z-index: 102;
+}
+.sort-search-page .sort-search input {
+    border: 1px solid #ebebeb;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    background: #eeeeee;
+    background-size: 16px 16px;
+    text-indent: 35px;
+    margin-left: 5%;
+}
+.sort-search-page .sort-search {
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    align-items:  center;
+}
+.sort-search-page .sort-search .iconfont{
+    position: absolute;
+    top: 18px;
+    left: 30px;
+}
+.sort-search-page .sort-search  .cancel{
+   margin-left: 10px;
+    cursor: pointer;
+}
+.sort-search-page .search-content{
+    padding: 10px 5%;
+    width: 90%;
+}
+.sort-search-page .search-content-tit{
+    font-size: 16px;
+    margin-bottom: 20px
+}
+.sort-search-page .search-content-tag ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sort-search-page .search-content-tag li{
+    background: #eeeeee;
+    padding: 5px 10px;
+    margin: 5px;
+    list-style:none;
+}
+.sort-search-page .search-content-tag li +li{
+
+}
+
+.btn {    
+    margin: 8px auto;    
+    flex-shrink: 0;    
+    width: 100px;    
+    height: 34px;
+    float: left;
+    margin-left: 10px;
+    border: 0.5px solid rgb(132, 132, 132);
+    }
+
+    .circle {    
+        border-radius: 64px;    
+        background: #f5f5f5;
+        margin-top: 2px;
+    }

@@ -25,6 +25,7 @@
         border-radius: 0.1rem;
         }
     </style>
+    
 </head>
 <body>
     <section class="flexView">
@@ -39,6 +40,7 @@
         </header>
 
         <section class="scrollView">
+            
             <div class="course-img">
                 <img src="../img/index/1 (1).jpeg" alt="">
             </div>
@@ -177,9 +179,44 @@
                 
 
             </div>
-
         </section>
 
     </section>
 </body>
+<script>
+    //获取top
+    var topbox = document.querySelector('.top');
+    var totop = document.querySelector('.totop');
+    window.onscroll = function(){
+        // 兼容写法
+        var t = document.documentElement.scrollTop || document.body.scrollTop
+        // 判断滚动条的高度让顶部和回到顶部按钮显示和隐藏
+        if(t >= 3000){
+    
+            topbox.style.display = totop.style.display = 'block'
+        }else{
+            topbox.style.display = totop.style.display = 'none'
+        }
+        // console.log(h);
+    }
+        // 给回到顶部按钮添加点击事件
+     totop.onclick = function(){
+        //  兼容写法
+        var t = document.documentElement.scrollTop || document.body.scrollTop
+        // 设置定时器制作动画效果
+        var timer = setInterval(function(){
+            // 高度自减回收过程
+            t -= 20
+            console.log(1)
+            // 当高度为0清除定时器 - 停止动画
+            if(t <= 0){
+                clearInterval(timer)
+            }
+            // 重新将高度t赋值给滚动的高度
+            document.documentElement.scrollTop = document.body.scrollTop = t
+        },20)
+    }
+    
+    </script>
+
 </html>

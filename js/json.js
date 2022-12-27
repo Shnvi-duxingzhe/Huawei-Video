@@ -8,3 +8,5 @@ var sites = [
 
 for(var i=0;i<sites.length;i++){ 
     document.getElementById("name"+i).innerHTML=sites[i].name; }
+
+

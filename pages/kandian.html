@@ -11,97 +11,32 @@
 
 </head>
 <style>
-    body {
-        background-color: rgb(235, 235, 235);
-    }
 
-    .kandian-da {
-        width: 93%;
-        height: 230px;
-        background-color: aliceblue;
-        margin: 20px 10px 20px 10px;
-        border-radius: 15px;
-    }
-
-    .kandian-shangtiao {
-        width: 100%;
-        height: 60px;
-        padding-top: 10px;
-    }
-
-    .kandian-touxiang {
-        border-radius: 50%;
-        overflow: hidden;
-        width: 50px;
-        height: 50px;
-        margin-left: 5px;
-        float: left;
-    }
-
-    .kandian-touxiang>img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .kandian-biaoti {
-        float: left;
-        width: 50%;
-        margin-left: 10px;
-        float: left;
-    }
-
-    .kandian-button {
-        float: left;
-        width: 25%;
-        padding-top: 5px;
-    }
-
-    .kandian-button>button {
-        width: 85%;
-        height: 30px;
-        background-color: rgb(255, 128, 0);
-        border-radius: 15px;
-        color: aliceblue;
-    }
-
-    .kandian-xiamian {
-        width: 100%;
-        height: 160px;
-        padding-top: 5px;
-    }
-
-    .kandian-xiaoshutiao {
-        float: left;
-        width: 32%;
-        padding-left: 3%;
-        height: 160px;
-        padding-top: 5px;
-    }
 </style>
 
 <body>
     <section class="flexView">
         <div class="wrap" id="wrap">
-        <header class="navBar navBar-fixed">
-            <div class="navBar-nav wrap" id="wrap">
-                <ul class="tabClick">
-                    <li>关注</li>
-                    <li class="active">热门</li>
-                    <li>发现</li>
-                </ul>
-            </div>
-            <div class="navBar-nav-icon">
-                <a href="javascript:;">
-                    <i class="icon icon-se"></i>
-                    <i class="icon icon-set"></i>
-                </a>
-            </div>
+            <header class="navBar navBar-fixed">
+                <div class="nav">
+                    <ul style="width: 230px;">
+                        <!-- 初始的时候 让第一个选项被选中 -->
+                        <li class="selected" style="font-size: 10px;">关注</li>
+                        <li style="font-size: 10px;">推荐</li>
+                        <li style="font-size: 10px;">小视频</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
 
 
-        </header>
-        <section class="scrollView">
-            
-                
+            </header>
+            <section class="scrollView">
+
+
                 <div class="lineBorder">
                     <div class="lineDiv"><!--移动的div--></div>
                 </div>
@@ -114,21 +49,19 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd0"></h3>
                                         <h6>观看视频</h6>
-                
                                     </div>
                                     <div class="kandian-button">
-                                        <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button1" id="redBtn" onclick="">关注</button>
                                     </div>
                                 </div>
-                
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -141,7 +74,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -154,7 +87,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -171,21 +104,21 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd1"></h3>
                                         <h6>观看视频</h6>
-                
+
                                     </div>
                                     <div class="kandian-button">
-                                       <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button" onclick="myFunction()">关注</button>
                                     </div>
                                 </div>
-                
+
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -198,7 +131,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -211,7 +144,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -228,21 +161,21 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd2"></h3>
                                         <h6>观看视频</h6>
-                
+
                                     </div>
                                     <div class="kandian-button">
-                                       <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button" onclick="myFunction()">关注</button>
                                     </div>
                                 </div>
-                
+
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -255,7 +188,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -268,7 +201,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -282,119 +215,119 @@
                         </div>
                         <div class="tabList">
                             <div class="kandian-da">
-                <div class="kandian-shangtiao">
-                    <div class="kandian-touxiang">
-                        <img src="../img/aaa.jpeg" alt="">
-                    </div>
-                    <div class="kandian-biaoti">
-                        <h3>悟空</h3>
-                        <h6>观看视频</h6>
+                                <div class="kandian-shangtiao">
+                                    <div class="kandian-touxiang">
+                                        <img src="../img/aaa.jpeg" alt="">
+                                    </div>
+                                    <div class="kandian-biaoti">
+                                        <h3 id="kd3"></h3>
+                                        <h6>观看视频</h6>
 
-                    </div>
-                    <div class="kandian-button">
-                       <button type="button"  onclick="myFunction()">关注</button>
-                    </div>
-                </div>
+                                    </div>
+                                    <div class="kandian-button">
+                                        <button type="button" onclick="myFunction()">关注</button>
+                                    </div>
+                                </div>
 
-                <div class="kandian-xiamian">
-                    <div class="kandian-xiaoshutiao">
-                        <div class="kandian-touxiang"
-                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
-                            <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
+                                <div class="kandian-xiamian">
+                                    <div class="kandian-xiaoshutiao">
+                                        <div class="kandian-touxiang"
+                                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
+                                            <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
 
-                        </div>
-                        <p>
-                            详情请看下面
-                        </p>
-                        <p>
-                            的详细视频
-                        </p>
-                    </div>
-                    <div class="kandian-xiaoshutiao">
-                        <div class="kandian-touxiang"
-                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
-                            <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
+                                        </div>
+                                        <p>
+                                            详情请看下面
+                                        </p>
+                                        <p>
+                                            的详细视频
+                                        </p>
+                                    </div>
+                                    <div class="kandian-xiaoshutiao">
+                                        <div class="kandian-touxiang"
+                                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
+                                            <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
 
-                        </div>
-                        <p>
-                            详情请看下面
-                        </p>
-                        <p>
-                            的详细视频
-                        </p>
-                    </div>
-                    <div class="kandian-xiaoshutiao">
-                        <div class="kandian-touxiang"
-                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
-                            <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
+                                        </div>
+                                        <p>
+                                            详情请看下面
+                                        </p>
+                                        <p>
+                                            的详细视频
+                                        </p>
+                                    </div>
+                                    <div class="kandian-xiaoshutiao">
+                                        <div class="kandian-touxiang"
+                                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
+                                            <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
 
-                        </div>
-                        <p>
-                            详情请看下面
-                        </p>
-                        <p>
-                            的详细视频
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="kandian-da">
-                <div class="kandian-shangtiao">
-                    <div class="kandian-touxiang">
-                        <img src="../img/aaa.jpeg" alt="">
-                    </div>
-                    <div class="kandian-biaoti">
-                        <h3>悟空</h3>
-                        <h6>观看视频</h6>
+                                        </div>
+                                        <p>
+                                            详情请看下面
+                                        </p>
+                                        <p>
+                                            的详细视频
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kandian-da">
+                                <div class="kandian-shangtiao">
+                                    <div class="kandian-touxiang">
+                                        <img src="../img/aaa.jpeg" alt="">
+                                    </div>
+                                    <div class="kandian-biaoti">
+                                        <h3 id="kd4"></h3>
+                                        <h6>观看视频</h6>
 
-                    </div>
-                    <div class="kandian-button">
-                       <button type="button"  onclick="myFunction()">关注</button>
-                    </div>
-                </div>
+                                    </div>
+                                    <div class="kandian-button">
+                                        <button type="button" onclick="myFunction()">关注</button>
+                                    </div>
+                                </div>
 
-                <div class="kandian-xiamian">
-                    <div class="kandian-xiaoshutiao">
-                        <div class="kandian-touxiang"
-                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
-                            <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
+                                <div class="kandian-xiamian">
+                                    <div class="kandian-xiaoshutiao">
+                                        <div class="kandian-touxiang"
+                                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
+                                            <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
 
-                        </div>
-                        <p>
-                            详情请看下面
-                        </p>
-                        <p>
-                            的详细视频
-                        </p>
-                    </div>
-                    <div class="kandian-xiaoshutiao">
-                        <div class="kandian-touxiang"
-                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
-                            <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
+                                        </div>
+                                        <p>
+                                            详情请看下面
+                                        </p>
+                                        <p>
+                                            的详细视频
+                                        </p>
+                                    </div>
+                                    <div class="kandian-xiaoshutiao">
+                                        <div class="kandian-touxiang"
+                                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
+                                            <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
 
-                        </div>
-                        <p>
-                            详情请看下面
-                        </p>
-                        <p>
-                            的详细视频
-                        </p>
-                    </div>
-                    <div class="kandian-xiaoshutiao">
-                        <div class="kandian-touxiang"
-                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
-                            <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
+                                        </div>
+                                        <p>
+                                            详情请看下面
+                                        </p>
+                                        <p>
+                                            的详细视频
+                                        </p>
+                                    </div>
+                                    <div class="kandian-xiaoshutiao">
+                                        <div class="kandian-touxiang"
+                                            style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
+                                            <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
 
-                        </div>
-                        <p>
-                            详情请看下面
-                        </p>
-                        <p>
-                            的详细视频
-                        </p>
-                    </div>
-                </div>
-            </div>
+                                        </div>
+                                        <p>
+                                            详情请看下面
+                                        </p>
+                                        <p>
+                                            的详细视频
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tabList">
                             <div class="kandian-da">
@@ -403,21 +336,21 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd"></h3>
                                         <h6>观看视频</h6>
-                
+
                                     </div>
                                     <div class="kandian-button">
-                                       <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button" onclick="myFunction()">关注</button>
                                     </div>
                                 </div>
-                
+
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -430,7 +363,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -443,7 +376,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -460,21 +393,21 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd5"></h3>
                                         <h6>观看视频</h6>
-                
+
                                     </div>
                                     <div class="kandian-button">
-                                       <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button" onclick="myFunction()">关注</button>
                                     </div>
                                 </div>
-                
+
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -487,7 +420,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -500,7 +433,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -517,21 +450,21 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd6"></h3>
                                         <h6>观看视频</h6>
-                
+
                                     </div>
                                     <div class="kandian-button">
-                                       <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button" onclick="myFunction()">关注</button>
                                     </div>
                                 </div>
-                
+
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -544,7 +477,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -557,7 +490,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -574,21 +507,21 @@
                                         <img src="../img/aaa.jpeg" alt="">
                                     </div>
                                     <div class="kandian-biaoti">
-                                        <h3>悟空</h3>
+                                        <h3 id="kd7"></h3>
                                         <h6>观看视频</h6>
-                
+
                                     </div>
                                     <div class="kandian-button">
-                                       <button type="button"  onclick="myFunction()">关注</button>
+                                        <button type="button" onclick="myFunction()">关注</button>
                                     </div>
                                 </div>
-                
+
                                 <div class="kandian-xiamian">
                                     <div class="kandian-xiaoshutiao">
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (1).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -601,7 +534,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (2).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -614,7 +547,7 @@
                                         <div class="kandian-touxiang"
                                             style="border-radius:30%;overflow: hidden; width: 100px;height: 100px;float: left; ">
                                             <img src="../img/index/1 (3).jpeg" alt="" style="width: 100%;height: 100%;">
-                
+
                                         </div>
                                         <p>
                                             详情请看下面
@@ -628,42 +561,50 @@
                         </div>
                     </div>
                 </div>
-           
 
-            
-            
+
+
+
         </div>
 
-        </section>
+    </section>
 
-        <footer class="footer footer-fixed">
-            <a href="../index.html" class="tabbar-item">
-                <span class="tabbar-item-icon">
-                    <i class="icon icon-index"></i>
-                </span>
-                <span class="tabbar-item-text">首页</span>
-            </a>
-            <a href="./kandian.html" class="tabbar-item  tabbar-item-active">
-                <span class="tabbar-item-icon">
-                    <i class="icon icon-yule-o"></i>
-                </span>
-                <span class="tabbar-item-text">看点</span>
-            </a>
-            <a href="./jioayu.html" class="tabbar-item">
-                <span class="tabbar-item-icon">
-                    <i class="icon icon-saishi"></i>
-                </span>
-                <span class="tabbar-item-text">教育</span>
-            </a>
-            <a href="./wode.html" class="tabbar-item">
-                <span class="tabbar-item-icon">
-                    <i class="icon icon-wode"></i>
-                </span>
-                <span class="tabbar-item-text">我的</span>
-            </a>
-        </footer>
+    <footer class="footer footer-fixed">
+        <a href="../index.html" class="tabbar-item">
+            <span class="tabbar-item-icon">
+                <i class="icon icon-index"></i>
+            </span>
+            <span class="tabbar-item-text">首页</span>
+        </a>
+        <a href="./kandian.html" class="tabbar-item  tabbar-item-active">
+            <span class="tabbar-item-icon">
+                <i class="icon icon-yule-o"></i>
+            </span>
+            <span class="tabbar-item-text">看点</span>
+        </a>
+        <a href="./jioayu.html" class="tabbar-item">
+            <span class="tabbar-item-icon">
+                <i class="icon icon-saishi"></i>
+            </span>
+            <span class="tabbar-item-text">教育</span>
+        </a>
+        <a href="./wode.html" class="tabbar-item">
+            <span class="tabbar-item-icon">
+                <i class="icon icon-wode"></i>
+            </span>
+            <span class="tabbar-item-text">我的</span>
+        </a>
+    </footer>
 </body>
-<script src="../js/style.js"></script>
+
+
+<script>
+
+</script>
+
 <script src="../js/button.js"></script>
+<script src="../js/btu-bg.js"></script>
+<script src="../js/tab.js"></script>
+<script src="../js/json2.js"></script>
 
 </html>
